@@ -3,7 +3,12 @@
 // It is really only useful for merging simple configs and does no schema validation/checking. 
 
 var merge = module.exports = function(src, dst) {
-  Object.keys(src).forEach(function(key) {
-    dst[key] = src[key];
+  var new_obj = {};
+  Object.keys(dst).forEach(function(key) {
+    new_obj[key] = dst[key];
   });
+  Object.keys(src).forEach(function(key) {
+    new_obj[key] = src[key];
+  });
+  return new_obj;
 };
