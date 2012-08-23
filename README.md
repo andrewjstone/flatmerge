@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/andrewjstone/flatmerge.png)](http://travis-ci.org/andrewjstone/flatmerge)
 Simple flat (non-recursive) merge of two objects
 
 ## API
